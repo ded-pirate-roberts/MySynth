@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="csr8XL" name="mysynth" projectType="audioplug" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1" pluginCharacteristicsValue="pluginIsSynth,pluginWantsMidiIn"
+              pluginFormats="buildAU,buildStandalone" companyName="CalebB"
+              pluginName="mysynth" pluginAUMainType="'aumu'" version="2.0.0">
+  <MAINGROUP id="viIrtw" name="mysynth">
+    <GROUP id="{390F8AB4-076B-FC1F-3F04-478CB9592378}" name="Source">
+      <GROUP id="{28669449-89D0-EF68-2AAF-010769C72887}" name="Model">
+        <GROUP id="{9A8BBA4D-17E6-7619-5971-EDB869A7D43D}" name="OscillatorTypes">
+          <FILE id="QnBHVW" name="OscillatorRow.cpp" compile="1" resource="0"
+                file="Source/OscillatorRow.cpp"/>
+          <FILE id="rdekBG" name="OscillatorRow.h" compile="0" resource="0" file="Source/OscillatorRow.h"/>
+          <FILE id="ZRZKtx" name="CustomOscillator.cpp" compile="1" resource="0"
+                file="Source/CustomOscillator.cpp"/>
+          <FILE id="bWLB2c" name="CustomOscillator.h" compile="0" resource="0"
+                file="Source/CustomOscillator.h"/>
+          <FILE id="DsvbH6" name="Oscillator.cpp" compile="1" resource="0" file="Source/Oscillator.cpp"/>
+          <FILE id="q38G2e" name="Oscillator.h" compile="0" resource="0" file="Source/Oscillator.h"/>
+        </GROUP>
+        <FILE id="Gqjmjf" name="SynthVoice.cpp" compile="1" resource="0" file="Source/SynthVoice.cpp"/>
+        <FILE id="UcLd6I" name="SynthVoice.h" compile="0" resource="0" file="Source/SynthVoice.h"/>
+        <FILE id="BOxLOW" name="SynthSound.h" compile="0" resource="0" file="Source/SynthSound.h"/>
+      </GROUP>
+      <GROUP id="{48800881-6CAA-C33E-F332-4A09253D33E7}" name="Controller">
+        <FILE id="Ksbm8j" name="PluginProcessor.cpp" compile="1" resource="0"
+              file="Source/PluginProcessor.cpp"/>
+        <FILE id="RXtJ0y" name="PluginProcessor.h" compile="0" resource="0"
+              file="Source/PluginProcessor.h"/>
+      </GROUP>
+      <GROUP id="{766B38A1-9DD1-C0F2-E8C2-45A5B4FDF905}" name="view">
+        <GROUP id="{DC805494-F2C6-B04E-2DD9-B4A90B8471B9}" name="Panels">
+          <GROUP id="{E76721D9-6712-3E7A-CEB9-9D812574A321}" name="CustomOscPanel">
+            <FILE id="rpA88J" name="SingleCustomOsc.cpp" compile="1" resource="0"
+                  file="Source/SingleCustomOsc.cpp"/>
+            <FILE id="zgxqeS" name="SingleCustomOsc.h" compile="0" resource="0"
+                  file="Source/SingleCustomOsc.h"/>
+          </GROUP>
+          <GROUP id="{E0273B0E-CC04-ECC2-C498-E137380C5F40}" name="OscPanels">
+            <FILE id="RF7upo" name="AdsrPanel.cpp" compile="1" resource="0" file="Source/AdsrPanel.cpp"/>
+            <FILE id="ZdOBUz" name="AdsrPanel.h" compile="0" resource="0" file="Source/AdsrPanel.h"/>
+            <FILE id="ns7gRz" name="OscPanel.cpp" compile="1" resource="0" file="Source/OscPanel.cpp"/>
+            <FILE id="G4NcpL" name="OscPanel.h" compile="0" resource="0" file="Source/OscPanel.h"/>
+            <FILE id="tQA4Sn" name="SingleOscPanel.cpp" compile="1" resource="0"
+                  file="Source/SingleOscPanel.cpp"/>
+            <FILE id="fpvNkn" name="SingleOscPanel.h" compile="0" resource="0"
+                  file="Source/SingleOscPanel.h"/>
+          </GROUP>
+          <FILE id="h47RcU" name="ChorusPanel.cpp" compile="1" resource="0" file="Source/ChorusPanel.cpp"/>
+          <FILE id="ZGSvL7" name="ChorusPanel.h" compile="0" resource="0" file="Source/ChorusPanel.h"/>
+          <FILE id="ZnNHkY" name="FilterPanel.cpp" compile="1" resource="0" file="Source/FilterPanel.cpp"/>
+          <FILE id="pOQFwk" name="FilterPanel.h" compile="0" resource="0" file="Source/FilterPanel.h"/>
+          <FILE id="Ap1LsU" name="LfoPanel.cpp" compile="1" resource="0" file="Source/LfoPanel.cpp"/>
+          <FILE id="TfMQvu" name="LfoPanel.h" compile="0" resource="0" file="Source/LfoPanel.h"/>
+          <FILE id="FXgjsP" name="ReverbPanel.cpp" compile="1" resource="0" file="Source/ReverbPanel.cpp"/>
+          <FILE id="TbBcXp" name="ReverbPanel.h" compile="0" resource="0" file="Source/ReverbPanel.h"/>
+        </GROUP>
+        <GROUP id="{C591B905-A5EB-C869-EA80-C1A994FB40AA}" name="MainViewComponent">
+          <FILE id="S9ODsS" name="PluginEditor.cpp" compile="1" resource="0"
+                file="Source/PluginEditor.cpp"/>
+          <FILE id="CKMyBQ" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+        </GROUP>
+      </GROUP>
+    </GROUP>
+  </MAINGROUP>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_dsp" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="MySynth"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="CalebMySynth"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../modules"/>
+        <MODULEPATH id="juce_core" path="../../modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../modules"/>
+        <MODULEPATH id="juce_events" path="../../modules"/>
+        <MODULEPATH id="juce_graphics" path="../../modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../modules"/>
+        <MODULEPATH id="juce_dsp" path="../../modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+  </EXPORTFORMATS>
+</JUCERPROJECT>
